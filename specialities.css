@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(45, 100, 117);
+  position: fixed;
+  padding: 0px 5px;
+  left: 0;
+  top:0;
+}
+
+.navbar h1{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 30px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+  color: gold;
+}
+
+.input-check {
+    display: none;
+}
+
+.icon {
+    display: none;
+} 
+
+
+
+/* .navbar i{
+   transition: 0.2s;
+    animation: bounce 6s infinite;
+}
+  @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-100px);}
+  60% {transform: translateY(-50px);}
+} */
+
+/* Header Section */
+.specialities-header{
+    padding: 100px 20px 60px;
+    text-align: center;
+    background: linear-gradient(to right, #f8fbff, #e3edf7);
+}
+
+.specialities-header h1 {
+    font-size: 40px;
+    color: #2d6475;
+    margin-bottom: 10px;
+}
+
+.specialities-header p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Specialities Section */
+.specialities-section {
+    padding: 60px 10%;
+}
+
+.speciality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.speciality img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.speciality h2 {
+    font-size: 28px;
+    color: #2d6475;
+    margin-bottom: 10px;
+}
+
+.speciality p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Button */
+.more-specialities {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.more-specialities button {
+    width: 180px;
+    height: 45px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #2d6475;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.more-specialities button:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.main-container {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+hr {
+    border-color: rgb(65, 61, 61);
+}
+
+.container1 {
+    width: 300px;
+    height: 165px;
+}
+
+.container1 a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.container1 a,p{
+    line-height: 1.8;
+}
+
+.rights {
+    text-align: center;
+     background: linear-gradient(to right, #e3e6e9, #c3cfe2);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Navbar Mobile Responsiveness */
+@media screen and (max-width: 700px){
+    .navbar {
+        position: relative;
+    }
+
+    .sub-navbar {
+        background-color: grey;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .icon {
+        display: block;
+         color: white;
+        font-size: 22px;
+    }
+
+    .input-check:checked ~ .sub-navbar {
+        left: 0px;
+    }
+
+    .speciality {
+        flex-direction: column;
+        text-align: center;
+    }
+    .speciality img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+
+/* Tab responsive */
+@media screen and (max-width: 1100px) {
+   .box {
+    min-height: 550px;
+    background-position: center;
+  }
+
+  .content h1 {
+    font-size: 35px;
+    top: 30%;
+    padding: 0 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    top: 48%;
+    padding: 0 15px;
+    max-width: 90%;
+  }
+
+  .btn-group {
+    top: 65%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+    .navbar {
+        position: relative;
+    }
+
+    .sub-navbar {
+        background-color: grey;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .input-check:checked ~ .sub-navbar {
+        left: 0px;
+    }
+    
+
+    /* specialities header */
+    .specialities-header{
+    padding: 30px 10px 30px;
+}
+    
+.specialities-header h1{
+    font-size: 35px;
+}
+.speciality {
+    flex-direction: column;
+}
+}
+
+

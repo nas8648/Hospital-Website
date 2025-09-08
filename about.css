@@ -1,0 +1,390 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(45, 100, 117);
+  position: fixed;
+  padding: 0px 5px;
+  left: 0;
+  top:0;
+}
+
+.navbar h1{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 30px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+  color: gold;
+}
+
+
+.input-check {
+    display: none;
+}
+
+.icon {
+    display: none;
+} 
+
+
+/* Heading Section */
+.about-heading {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: linear-gradient(to right, #e3edf7, #f8fbff);
+}
+
+.about-heading h1 {
+  font-size: 40px;
+  color: #2d6475;
+  margin-bottom: 12px;
+}
+
+.about-heading p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* About Hospital Section */
+.about-hospital {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 10%;
+  gap: 50px;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.about-hospital img {
+  width: 470px;
+  height: 290px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.about-hospital div {
+  max-width: 600px;
+}
+
+.about-hospital h2 {
+  font-size: 34px;
+  color: #2d6475;
+  margin-bottom: 20px;
+}
+
+.about-hospital p {
+  font-size: 16px;
+  margin-bottom: 18px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+/* Awards Section */
+.awards {
+  padding: 80px 10%;
+  background: #f1f5f8;
+  text-align: center;
+}
+
+.awards h2 {
+  font-size: 34px;
+  color: #2d6475;
+  margin-bottom: 40px;
+}
+
+.awards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.award-card {
+  width: 250px;
+  height: 250px;
+  background: white;
+  padding: 35px 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.award-card i {
+  font-size: 45px;
+  color: #2d6475;
+  margin-bottom: 18px;
+}
+
+.award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Meet Our Team */
+.team {
+  padding: 80px 10%;
+  background: white;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 34px;
+  color: #2d6475;
+  margin-bottom: 20px;
+}
+
+.team p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 300px;
+  background: #f1f5f8;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-para h3 {
+  margin: 10px 0 8px;
+  color: #2d6475;
+}
+
+.team-para p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.team-para button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #2d6475;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.team-para button:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
+}
+/* Footer */
+.main-container {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+hr {
+    border-color: rgb(65, 61, 61);
+}
+
+.container1 {
+    width: 300px;
+    height: 165px;
+}
+
+.container1 a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.container1 a,p{
+    line-height: 1.8;
+}
+
+.rights {
+    text-align: center;
+     background: linear-gradient(to right, #e3e6e9, #c3cfe2);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/* Navbar Mobile Responsiveness */
+@media screen and (max-width: 700px) {
+    .navbar {
+        position: relative;
+    }
+
+    .sub-navbar {
+        background-color: grey;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .input-check:checked ~ .sub-navbar {
+        left: 0px;
+    }
+   
+    .about-heading {
+  padding: 40px 20px 40px;
+}
+    .about-hospital {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hospital img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+
+
+/* Tab responsive */
+@media screen and (max-width: 1100px) {
+   .box {
+    min-height: 550px;
+    background-position: center;
+  }
+
+  .content h1 {
+    font-size: 35px;
+    top: 30%;
+    padding: 0 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    top: 48%;
+    padding: 0 15px;
+    max-width: 90%;
+  }
+
+  .btn-group {
+    top: 65%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+    .navbar {
+        position: relative;
+    }
+
+    .sub-navbar {
+        background-color: grey;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .input-check:checked ~ .sub-navbar {
+        left: 0px;
+    }
+
+    /* about */
+    .about-heading {
+    padding: 50px 20px 40px;
+}
+
+.award-card {
+  width: 260px;
+  height: 300px;
+}
+/* team-container */
+   .team-member {
+  width: 280px;
+}
+
+}
